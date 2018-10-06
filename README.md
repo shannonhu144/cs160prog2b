@@ -24,7 +24,7 @@ This is the Congress.gov link for the bill.
 
 We can see the list of committees on this screen.  
 
-[https://youtu.be/TiIRarqdLSA](https://youtu.be/TiIRarqdLSA)
+[https://youtu.be/KnxuSOqgiww](https://youtu.be/KnxuSOqgiww)
 
 [https://github.com/shannonhu144/cs160prog2b](https://github.com/shannonhu144/cs160prog2b)
 
