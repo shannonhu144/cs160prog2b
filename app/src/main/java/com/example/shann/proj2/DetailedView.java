@@ -123,7 +123,7 @@ public class DetailedView extends AppCompatActivity {
         tab1.setArguments(bundle);
         Tab2Fragment tab2 = new Tab2Fragment();
         tab2.setArguments(bundle);
-        adapter.addFragment(tab1, "Bills");
+        adapter.addFragment(tab1, "Sponsored Bills");
         adapter.addFragment(tab2, "Committees");
         viewPager.setAdapter(adapter);
     }

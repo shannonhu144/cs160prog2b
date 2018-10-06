@@ -65,8 +65,8 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         final Bill bill = bills.get(position);
-        holder.billdate.setText("Date introduced: " + bill.getDate());
-        holder.billnumber.setText("Bill num " + bill.getNumber());
+        holder.billdate.setText("Date: " + bill.getDate());
+        holder.billnumber.setText("" + bill.getNumber());
         holder.billtitle.setText("Bill name: " + bill.getName());
         holder.bill.setImageResource(bill.getDrawableId());
         if (bill.getDrawableId() == R.drawable.expand) {
