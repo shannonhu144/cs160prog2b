@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="16dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            >
+
+            <ImageButton
+                android:id="@+id/bill"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/mybutton"
+                android:onClick="toggle_contents"
+                android:src="@drawable/expand" />
+
+            <TextView
+                android:id="@+id/billdate"
+                android:layout_width="180dp"
+                android:layout_height="58dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:onClick="toggle_contents"
+                android:text="Date introduced: 2018-10-05"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/billnumber"
+                android:layout_width="106dp"
+                android:layout_height="58dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/bill"
+                android:layout_toRightOf="@+id/bill"
+                android:clickable="true"
+                android:onClick="toggle_contents"
+                android:text="Bill num H.R. 1000"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/billtitle"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/billnumber"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="12dp"
+                android:layout_toEndOf="@+id/bill"
+                android:layout_toRightOf="@+id/bill"
+                android:textColor="@android:color/black"
+                android:text="0123456789012345678901234567890123456789012345678901234567890123456789"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

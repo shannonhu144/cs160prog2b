@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        >
+        <ImageButton
+            android:id="@+id/back1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/mybutton"
+            android:onClick="goBack1"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_below="@+id/back1"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/picture1"
+            android:layout_toRightOf="@+id/picture1"
+            android:textColor="@android:color/black"
+            android:text="Steven Palazzo"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/picture1"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/back1"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true" />
+
+        <Button
+            android:id="@+id/email1"
+            android:layout_width="94dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/party1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/website1"
+            android:layout_toRightOf="@+id/picture1"
+            android:background="@drawable/mybutton"
+            android:drawableLeft="@drawable/email"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:text="Email"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/website1"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/party1"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/mybutton"
+            android:drawableLeft="@drawable/website"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="5dp"
+            android:text="Website"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/moreinfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_toEndOf="@+id/back1"
+            android:layout_toRightOf="@+id/back1"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="Bills and Committees"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/party1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name1"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black"
+            android:layout_toEndOf="@+id/picture1"
+            android:layout_toRightOf="@+id/picture1"
+            android:text="Independent Representative"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
